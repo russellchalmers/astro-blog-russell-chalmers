@@ -1,0 +1,338 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+---
+
+<BlogLayout title="Projects - Russell Chalmers">
+  <!-- Hero Section -->
+  <section class="relative py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-5xl font-bold text-center mb-8">
+        <span class="gradient-text">Featured Projects</span>
+      </h1>
+      <p class="text-xl text-center text-gray-300 mb-12 max-w-3xl mx-auto">
+        Real-world solutions delivering security, performance, and scale
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Filters -->
+  <section class="py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="filter-btn active glass px-6 py-2 rounded-full text-sm font-semibold transition-all" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn glass px-6 py-2 rounded-full text-sm font-semibold transition-all hover:bg-purple-500/20" data-filter="security">
+          Security
+        </button>
+        <button class="filter-btn glass px-6 py-2 rounded-full text-sm font-semibold transition-all hover:bg-purple-500/20" data-filter="infrastructure">
+          Infrastructure
+        </button>
+        <button class="filter-btn glass px-6 py-2 rounded-full text-sm font-semibold transition-all hover:bg-purple-500/20" data-filter="performance">
+          Performance
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Grid -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Project 1: Zero Trust Implementation -->
+        <div class="project-card glass rounded-xl overflow-hidden hover:shadow-2xl transition-all" data-category="security">
+          <div class="p-8">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-2xl">🔐</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Enterprise Zero Trust Architecture</h3>
+                <span class="text-sm text-purple-400">Security • 2023</span>
+              </div>
+            </div>
+            
+            <p class="text-gray-300 mb-6">
+              Designed and implemented comprehensive Zero Trust security model for global financial services firm with 50,000+ users across 30 countries.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-purple-400">Key Achievements</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>• Reduced security incidents by 75% in first year</li>
+                <li>• Implemented Cloudflare Access for all applications</li>
+                <li>• Achieved 99.9% authentication success rate</li>
+                <li>• Saved $2M annually on VPN infrastructure</li>
+              </ul>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-purple-400">Technologies Used</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">Cloudflare Access</span>
+                <span class="tech-tag">SAML/OIDC</span>
+                <span class="tech-tag">MFA</span>
+                <span class="tech-tag">SIEM Integration</span>
+                <span class="tech-tag">Risk Scoring</span>
+              </div>
+            </div>
+            
+            <button class="text-purple-400 hover:text-purple-300 font-semibold transition-colors">
+              View Case Study →
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Global CDN Optimization -->
+        <div class="project-card glass rounded-xl overflow-hidden hover:shadow-2xl transition-all" data-category="performance">
+          <div class="p-8">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-2xl">⚡</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Global CDN & Edge Optimization</h3>
+                <span class="text-sm text-blue-400">Performance • 2023</span>
+              </div>
+            </div>
+            
+            <p class="text-gray-300 mb-6">
+              Architected edge computing solution processing 1B+ requests daily for e-commerce platform, reducing latency by 60% globally.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-blue-400">Key Achievements</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>• Reduced global average latency from 250ms to 100ms</li>
+                <li>• Implemented intelligent routing with Cloudflare Workers</li>
+                <li>• Achieved 99.99% uptime across all regions</li>
+                <li>• Cut bandwidth costs by 40% through optimization</li>
+              </ul>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-blue-400">Technologies Used</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">Cloudflare Workers</span>
+                <span class="tech-tag">Edge Computing</span>
+                <span class="tech-tag">WebAssembly</span>
+                <span class="tech-tag">Cache Optimization</span>
+                <span class="tech-tag">Real User Monitoring</span>
+              </div>
+            </div>
+            
+            <button class="text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+              View Case Study →
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: Cloud Migration -->
+        <div class="project-card glass rounded-xl overflow-hidden hover:shadow-2xl transition-all" data-category="infrastructure">
+          <div class="p-8">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-2xl">☁️</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Hybrid Cloud Transformation</h3>
+                <span class="text-sm text-green-400">Infrastructure • 2022</span>
+              </div>
+            </div>
+            
+            <p class="text-gray-300 mb-6">
+              Led migration of legacy on-premise infrastructure to hybrid cloud architecture for healthcare provider, ensuring HIPAA compliance throughout.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-green-400">Key Achievements</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>• Migrated 500+ applications with zero downtime</li>
+                <li>• Reduced infrastructure costs by 35%</li>
+                <li>• Improved disaster recovery RTO from 24h to 1h</li>
+                <li>• Maintained full HIPAA compliance</li>
+              </ul>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-green-400">Technologies Used</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">CI/CD Pipelines</span>
+                <span class="tech-tag">Monitoring Stack</span>
+              </div>
+            </div>
+            
+            <button class="text-green-400 hover:text-green-300 font-semibold transition-colors">
+              View Case Study →
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4: Security Operations Center -->
+        <div class="project-card glass rounded-xl overflow-hidden hover:shadow-2xl transition-all" data-category="security">
+          <div class="p-8">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-2xl">🛡️</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">24/7 Security Operations Center</h3>
+                <span class="text-sm text-red-400">Security • 2022</span>
+              </div>
+            </div>
+            
+            <p class="text-gray-300 mb-6">
+              Built and scaled global SOC from ground up, implementing advanced threat detection and automated response capabilities.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-red-400">Key Achievements</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>• Reduced mean time to detect (MTTD) to under 5 minutes</li>
+                <li>• Automated 70% of incident response procedures</li>
+                <li>• Integrated 15+ security tools into unified platform</li>
+                <li>• Achieved SOC 2 Type II certification</li>
+              </ul>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold mb-3 text-red-400">Technologies Used</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">Splunk</span>
+                <span class="tech-tag">SOAR Platform</span>
+                <span class="tech-tag">Threat Intelligence</span>
+                <span class="tech-tag">EDR/XDR</span>
+                <span class="tech-tag">MITRE ATT&CK</span>
+              </div>
+            </div>
+            
+            <button class="text-red-400 hover:text-red-300 font-semibold transition-colors">
+              View Case Study →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Section -->
+  <section class="py-20 bg-gray-800/30">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Impact by the Numbers</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-5xl font-bold gradient-text mb-2">1B+</div>
+          <p class="text-gray-400">Requests/Day Protected</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold gradient-text mb-2">99.99%</div>
+          <p class="text-gray-400">Average Uptime</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold gradient-text mb-2">75%</div>
+          <p class="text-gray-400">Security Incidents Reduced</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold gradient-text mb-2">$10M+</div>
+          <p class="text-gray-400">Cost Savings Delivered</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Source Contributions -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Open Source Contributions</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass p-6 rounded-xl hover:bg-purple-500/10 transition-all">
+          <h3 class="text-xl font-bold mb-3">Cloudflare Terraform Provider</h3>
+          <p class="text-gray-400 mb-4">Contributing security-focused modules and best practices for enterprise deployments</p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-purple-400">⭐ 127 stars</span>
+            <a href="#" class="text-purple-400 hover:text-purple-300">View on GitHub →</a>
+          </div>
+        </div>
+        
+        <div class="glass p-6 rounded-xl hover:bg-purple-500/10 transition-all">
+          <h3 class="text-xl font-bold mb-3">F5 Automation Toolkit</h3>
+          <p class="text-gray-400 mb-4">Python-based automation tools for F5 BIG-IP configuration and management</p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-purple-400">⭐ 89 stars</span>
+            <a href="#" class="text-purple-400 hover:text-purple-300">View on GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 gradient-text">Have a Challenging Project?</h2>
+      <p class="text-xl text-gray-300 mb-8">
+        I love tackling complex security and infrastructure challenges
+      </p>
+      <a href="mailto:russell@example.com" class="ripple inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-12 py-5 rounded-lg font-semibold text-lg transition-all transform hover:scale-105">
+        Let's Discuss Your Project
+      </a>
+    </div>
+  </section>
+
+  <style>
+    .tech-tag {
+      @apply px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs;
+    }
+    
+    .project-card {
+      transition: all 0.3s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .filter-btn.active {
+      @apply bg-purple-500/30 text-purple-300;
+    }
+  </style>
+
+  <script>
+    // Project filtering
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active state
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Filter projects
+          const filter = btn.dataset.filter;
+          projectCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 10);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+    });
+  </script>

@@ -146,54 +146,136 @@ import BlogLayout from '../layouts/BlogLayout.astro';
     </div>
   </section>
 
-  <!-- Career Timeline -->
-  <section class="py-20 relative">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Career Journey</h2>
-      
-      <div class="timeline relative">
-        <!-- Timeline line -->
-        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-pink-500"></div>
-        
-        <!-- Timeline items -->
-        <div class="timeline-item mb-12 flex items-center">
-          <div class="w-full md:w-1/2 md:pr-8 text-right">
-            <div class="glass p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-2">Senior Security Architect</h3>
-              <p class="text-purple-400 mb-2">Global Enterprise • 2020 - Present</p>
-              <p class="text-gray-400">Leading security transformation initiatives, architecting Zero Trust solutions for 50k+ users</p>
-            </div>
-          </div>
-          <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
-          <div class="w-full md:w-1/2 md:pl-8"></div>
-        </div>
-        
-        <div class="timeline-item mb-12 flex items-center">
-          <div class="w-full md:w-1/2 md:pr-8"></div>
-          <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
-          <div class="w-full md:w-1/2 md:pl-8">
-            <div class="glass p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-2">Infrastructure Lead</h3>
-              <p class="text-purple-400 mb-2">Tech Startup • 2016 - 2020</p>
-              <p class="text-gray-400">Built cloud-first infrastructure handling billions of requests monthly</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="timeline-item mb-12 flex items-center">
-          <div class="w-full md:w-1/2 md:pr-8 text-right">
-            <div class="glass p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-2">Systems Engineer</h3>
-              <p class="text-purple-400 mb-2">Financial Services • 2012 - 2016</p>
-              <p class="text-gray-400">Managed critical infrastructure for trading systems, ensuring 99.99% uptime</p>
-            </div>
-          </div>
-          <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
-          <div class="w-full md:w-1/2 md:pl-8"></div>
-        </div>
-      </div>
-    </div>
+ <!-- Replace the Career Timeline section in index.astro with this mobile-friendly version -->
+
+<!-- Career Timeline -->
+<section class="py-20 relative">
+	<div class="max-w-4xl mx-auto px-4">
+	  <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Career Journey</h2>
+	  
+	  <!-- Desktop Timeline -->
+	  <div class="timeline relative hidden md:block">
+		<!-- Timeline line -->
+		<div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-pink-500"></div>
+		
+		<!-- Timeline items -->
+		<div class="timeline-item mb-12 flex items-center">
+		  <div class="w-full md:w-1/2 md:pr-8 text-right">
+			<div class="glass p-6 rounded-lg">
+			  <h3 class="text-xl font-bold mb-2">Senior Security Architect</h3>
+			  <p class="text-purple-400 mb-2">Global Enterprise • 2020 - Present</p>
+			  <p class="text-gray-400">Leading security transformation initiatives, architecting Zero Trust solutions for 50k+ users</p>
+			</div>
+		  </div>
+		  <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
+		  <div class="w-full md:w-1/2 md:pl-8"></div>
+		</div>
+		
+		<div class="timeline-item mb-12 flex items-center">
+		  <div class="w-full md:w-1/2 md:pr-8"></div>
+		  <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
+		  <div class="w-full md:w-1/2 md:pl-8">
+			<div class="glass p-6 rounded-lg">
+			  <h3 class="text-xl font-bold mb-2">Infrastructure Lead</h3>
+			  <p class="text-purple-400 mb-2">Tech Startup • 2016 - 2020</p>
+			  <p class="text-gray-400">Built cloud-first infrastructure handling billions of requests monthly</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="timeline-item mb-12 flex items-center">
+		  <div class="w-full md:w-1/2 md:pr-8 text-right">
+			<div class="glass p-6 rounded-lg">
+			  <h3 class="text-xl font-bold mb-2">Systems Engineer</h3>
+			  <p class="text-purple-400 mb-2">Financial Services • 2012 - 2016</p>
+			  <p class="text-gray-400">Managed critical infrastructure for trading systems, ensuring 99.99% uptime</p>
+			</div>
+		  </div>
+		  <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
+		  <div class="w-full md:w-1/2 md:pl-8"></div>
+		</div>
+	  </div>
+	  
+	  <!-- Mobile Timeline -->
+	  <div class="mobile-timeline md:hidden">
+		<!-- Timeline line for mobile -->
+		<div class="absolute left-8 top-0 w-1 h-full bg-gradient-to-b from-purple-500 to-pink-500"></div>
+		
+		<!-- Timeline items for mobile -->
+		<div class="timeline-item-mobile mb-8 relative">
+		  <div class="timeline-dot-mobile absolute left-6 w-5 h-5 bg-purple-500 rounded-full border-4 border-gray-900"></div>
+		  <div class="ml-16">
+			<div class="glass p-6 rounded-lg">
+			  <h3 class="text-xl font-bold mb-2">Senior Security Architect</h3>
+			  <p class="text-purple-400 mb-2 text-sm">Global Enterprise • 2020 - Present</p>
+			  <p class="text-gray-400 text-sm">Leading security transformation initiatives, architecting Zero Trust solutions for 50k+ users</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="timeline-item-mobile mb-8 relative">
+		  <div class="timeline-dot-mobile absolute left-6 w-5 h-5 bg-purple-500 rounded-full border-4 border-gray-900"></div>
+		  <div class="ml-16">
+			<div class="glass p-6 rounded-lg">
+			  <h3 class="text-xl font-bold mb-2">Infrastructure Lead</h3>
+			  <p class="text-purple-400 mb-2 text-sm">Tech Startup • 2016 - 2020</p>
+			  <p class="text-gray-400 text-sm">Built cloud-first infrastructure handling billions of requests monthly</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="timeline-item-mobile mb-8 relative">
+		  <div class="timeline-dot-mobile absolute left-6 w-5 h-5 bg-purple-500 rounded-full border-4 border-gray-900"></div>
+		  <div class="ml-16">
+			<div class="glass p-6 rounded-lg">
+			  <h3 class="text-xl font-bold mb-2">Systems Engineer</h3>
+			  <p class="text-purple-400 mb-2 text-sm">Financial Services • 2012 - 2016</p>
+			  <p class="text-gray-400 text-sm">Managed critical infrastructure for trading systems, ensuring 99.99% uptime</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
   </section>
+  
+  <style>
+	/* Desktop timeline styles */
+	.timeline-dot {
+	  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+	}
+	
+	/* Mobile timeline styles */
+	.timeline-dot-mobile {
+	  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+	  z-index: 1;
+	}
+	
+	.timeline-item-mobile .glass {
+	  animation: slideInRight 0.5s ease-out;
+	}
+	
+	@keyframes slideInRight {
+	  from {
+		opacity: 0;
+		transform: translateX(-20px);
+	  }
+	  to {
+		opacity: 1;
+		transform: translateX(0);
+	  }
+	}
+	
+	/* Ensure proper spacing on very small screens */
+	@media (max-width: 400px) {
+	  .timeline-item-mobile .ml-16 {
+		margin-left: 3rem;
+	  }
+	  
+	  .timeline-item-mobile h3 {
+		font-size: 1.1rem;
+	  }
+	}
+  </style>
 
   <!-- Expertise Cards with Tilt Effect -->
   <section id="expertise" class="py-20 relative">
