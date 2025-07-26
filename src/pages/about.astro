@@ -1,62 +1,251 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BlogLayout from '../layouts/BlogLayout.astro';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<BlogLayout title="About - Russell Chalmers">
+  <!-- Hero Section -->
+  <section class="relative py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-5xl font-bold text-center mb-8">
+        <span class="gradient-text">About Me</span>
+      </h1>
+      <p class="text-xl text-center text-gray-300 mb-12 max-w-3xl mx-auto">
+        25+ years of transforming complex technical challenges into secure, scalable solutions
+      </p>
+    </div>
+  </section>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+  <!-- Story Section -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="glass p-8 rounded-xl mb-12">
+        <h2 class="text-3xl font-bold mb-6 gradient-text">My Journey</h2>
+        <div class="space-y-4 text-gray-300">
+          <p>
+            With over 25 years in IT and 8+ years specializing in cybersecurity, I've had the privilege of 
+            architecting and defending some of the most critical digital infrastructure in the enterprise space.
+          </p>
+          <p>
+            My journey began in system administration, where I learned the fundamentals of building reliable 
+            infrastructure. As threats evolved, so did my focus - shifting towards security architecture and 
+            eventually leading global security initiatives for organizations processing billions of requests monthly.
+          </p>
+          <p>
+            Today, I specialize in designing Zero Trust architectures, implementing enterprise security solutions 
+            with Cloudflare and F5, and ensuring organizations can scale securely in our cloud-first world.
+          </p>
+        </div>
+      </div>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+      <!-- Core Values -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="glass p-6 rounded-lg text-center hover:bg-purple-500/10 transition-all">
+          <div class="text-4xl mb-4">🛡️</div>
+          <h3 class="text-xl font-bold mb-2">Security First</h3>
+          <p class="text-gray-400">Every solution starts with security at its core, not as an afterthought</p>
+        </div>
+        <div class="glass p-6 rounded-lg text-center hover:bg-purple-500/10 transition-all">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-2">Performance Matters</h3>
+          <p class="text-gray-400">Security shouldn't compromise user experience or system performance</p>
+        </div>
+        <div class="glass p-6 rounded-lg text-center hover:bg-purple-500/10 transition-all">
+          <div class="text-4xl mb-4">🌍</div>
+          <h3 class="text-xl font-bold mb-2">Global Scale</h3>
+          <p class="text-gray-400">Solutions designed to work seamlessly across continents and cultures</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+  <!-- Technical Expertise Deep Dive -->
+  <section class="py-12 bg-gray-800/30">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Technical Expertise</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Security Technologies -->
+        <div class="glass p-8 rounded-xl">
+          <h3 class="text-2xl font-bold mb-6 text-purple-400">Security Technologies</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <span class="text-purple-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">Cloudflare Enterprise Suite</h4>
+                <p class="text-gray-400 text-sm">Zero Trust Access, Magic WAN, Workers, R2, DDoS Protection</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-purple-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">F5 BIG-IP Platform</h4>
+                <p class="text-gray-400 text-sm">Advanced WAF, iRules, GTM/LTM, SSL Orchestration</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-purple-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">SIEM & Security Operations</h4>
+                <p class="text-gray-400 text-sm">Splunk, Elastic Security, Threat Hunting, Incident Response</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-purple-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">Compliance & Governance</h4>
+                <p class="text-gray-400 text-sm">ISO 27001, PCI DSS, SOC 2, NIST Framework</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+        <!-- Infrastructure & Cloud -->
+        <div class="glass p-8 rounded-xl">
+          <h3 class="text-2xl font-bold mb-6 text-blue-400">Infrastructure & Cloud</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <span class="text-blue-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">Cloud Platforms</h4>
+                <p class="text-gray-400 text-sm">AWS (Solutions Architect), Azure, Multi-cloud Architecture</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-blue-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">Infrastructure as Code</h4>
+                <p class="text-gray-400 text-sm">Terraform, CloudFormation, Ansible, CI/CD Pipelines</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-blue-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">Container & Orchestration</h4>
+                <p class="text-gray-400 text-sm">Kubernetes, Docker, Service Mesh, Microservices</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-blue-400 mr-3 text-xl">◆</span>
+              <div>
+                <h4 className="font-semibold mb-1">Edge Computing</h4>
+                <p class="text-gray-400 text-sm">CDN Strategy, Edge Workers, Global Load Balancing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Achievements -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Key Achievements</h2>
+      
+      <div class="space-y-6">
+        <div class="achievement-card glass p-6 rounded-xl hover:bg-purple-500/10 transition-all">
+          <div class="flex items-start">
+            <div class="text-3xl mr-4">🏆</div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Led Global Security Transformation</h3>
+              <p class="text-gray-400">Architected and implemented Zero Trust security model for 50,000+ users across 30 countries, reducing security incidents by 75%</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-card glass p-6 rounded-xl hover:bg-purple-500/10 transition-all">
+          <div class="flex items-start">
+            <div class="text-3xl mr-4">📈</div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Scaled Infrastructure 100x</h3>
+              <p class="text-gray-400">Designed cloud architecture that scaled from handling 10M to 1B+ requests daily while maintaining 99.99% uptime</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-card glass p-6 rounded-xl hover:bg-purple-500/10 transition-all">
+          <div class="flex items-start">
+            <div class="text-3xl mr-4">💰</div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Delivered $5M+ Cost Savings</h3>
+              <p class="text-gray-400">Optimized cloud spending through strategic architecture redesign and automated resource management</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-card glass p-6 rounded-xl hover:bg-purple-500/10 transition-all">
+          <div class="flex items-start">
+            <div class="text-3xl mr-4">✅</div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Achieved Compliance Excellence</h3>
+              <p class="text-gray-400">Successfully led organizations through ISO 27001, PCI DSS, and SOC 2 certifications with zero critical findings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Interests -->
+  <section class="py-12 bg-gray-800/30">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Beyond the Terminal</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-4 text-purple-400">Continuous Learning</h3>
+          <p class="text-gray-300 mb-4">
+            Technology evolves rapidly, and I'm passionate about staying ahead of the curve. Currently exploring:
+          </p>
+          <ul class="space-y-2 text-gray-400">
+            <li>• AI/ML applications in security</li>
+            <li>• Quantum-resistant cryptography</li>
+            <li>• WebAssembly at the edge</li>
+            <li>• Sustainable cloud architecture</li>
+          </ul>
+        </div>
+        
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-4 text-blue-400">Community Involvement</h3>
+          <p class="text-gray-300 mb-4">
+            Giving back to the tech community is important to me:
+          </p>
+          <ul class="space-y-2 text-gray-400">
+            <li>• Mentoring junior engineers</li>
+            <li>• Speaking at security conferences</li>
+            <li>• Contributing to open source</li>
+            <li>• Writing technical blog posts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 gradient-text">Let's Build Something Secure Together</h2>
+      <p class="text-xl text-gray-300 mb-8">
+        I'm always interested in challenging projects that push the boundaries of what's possible
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/projects" class="ripple bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105">
+          View My Projects
+        </a>
+        <a href="#contact" class="ripple glass text-white hover:bg-white/20 px-8 py-4 rounded-lg font-semibold transition-all">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .achievement-card {
+      transition: all 0.3s ease;
+    }
+    
+    .achievement-card:hover {
+      transform: translateX(10px);
+    }
+  </style>
+</BlogLayout>
